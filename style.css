@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 /* Базовые стили */
 * { 
   box-sizing: border-box; 
-  font-family: "Poppins", sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: "Manrope", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   color: #333;
   line-height: 1.6;
 }
@@ -59,11 +58,11 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  /* isolation: isolate; */
   z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 .modal-backdrop {
   position: absolute;
@@ -71,7 +70,6 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  /* isolation: isolate; */
 }
 .modal-content {
   display: flex;
@@ -80,34 +78,41 @@ body {
   flex-direction: column;
   z-index: 2;
   background-color: #FFF;
-  /* background: radial-gradient(circle farthest-side at center, #FFF, #bebebe); */
   padding: 25px;
   border-radius: 5px;
-  box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 10px #000;
+  text-align: center;
 }
 .modal-content h2 {
-  
-}
-.modal-content p {
-  /* padding: 50px; */
-  /* margin: 0 0 16px; */
+  text-wrap: nowrap;
 }
 .modal .modal-content p code {
   background: #f0f0f0;
   padding: 2px 4px;
   border-radius: 3px;
   font-family: monospace;
+  text-wrap: nowrap;
 }
 .button {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  /* color: #000; */
   padding: 10px 80px;
-  /* border: 1px solid #000; */
   border-radius: 5px;
   background-color: #0088ff;
   color: #FFF;
   margin-top: 16px;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.button:active {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #005cad;
 }
