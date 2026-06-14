@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 /* Базовые стили */
-* { 
-  box-sizing: border-box; 
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Manrope", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family:
+    "Manrope",
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    sans-serif;
   color: #333;
   line-height: 1.6;
 }
@@ -77,7 +83,7 @@ body {
   align-items: center;
   flex-direction: column;
   z-index: 2;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 25px;
   border-radius: 5px;
   box-shadow: 0 0 10px #000;
@@ -100,7 +106,7 @@ body {
   padding: 10px 80px;
   border-radius: 5px;
   background-color: #0088ff;
-  color: #FFF;
+  color: #fff;
   margin-top: 16px;
   transition: all 0.3s ease;
 }
@@ -108,7 +114,6 @@ body {
   opacity: 0.85;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
 }
 .button:active {
   opacity: 1;
